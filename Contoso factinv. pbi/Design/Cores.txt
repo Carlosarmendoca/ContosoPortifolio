@@ -1,0 +1,14 @@
+Primária (destaque): Azul Escuro → #1F4E79
+
+Secundária (neutro de contraste): Cinza Escuro → #4D4D4D
+
+Complementar (alerta positivo): Verde → #2E7D32
+
+Complementar (alerta negativo): Vermelho → #C62828
+(para rupturas, % negativos, perdas)
+
+Destaque suave: Laranja → #F9A825
+(para chamar atenção sem ser erro, ex.: pedidos em aberto)
+
+Plano de fundo: Cinza Claro → #F2F2F2 ou Branco puro #FFFFFF
+(para dashboards limpos, sem poluição visual).
