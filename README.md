@@ -11,101 +11,112 @@ A base de dados utilizada é o **ContosoRetailDW**, disponibilizada pela Microso
 * **Power Query (M):** Usado para a etapa de transformação e enriquecimento dos dados.
 ---
 ### ⚙️ Principais Recursos do Dashboard
-
-- 📍 **Visão Geral:**  
-  - Total de lojas em situação crítica.  
-  - Quantidade de itens cadastrados.  
-  - Estoque disponível e custo total do estoque.  
-  - Evolução mensal de unidades em falta vs. pedidos de compra.  
-
-- 🌍 **Análise por País:**  
-  - Estoque crítico consolidado.  
-  - Percentual de unidades em falta por região.  
-  - Top 10 lojas com maior número de unidades em falta.  
-
-- 🏪 **Análise por Região e Loja:**  
-  - Drill-through para detalhamento de cada região.  
-  - Impacto médio por loja vs. unidades em falta.  
-  - Custos de ruptura de estoque por loja.  
-
-- 🔎 **Filtros Interativos:**  
-  - Ano e mês.  
-  - Continente e país.  
-  - Fabricante.  
-  - Classificação do produto (Regular, Economy, Deluxe).  
-
 ### 🖼️ Imagens do Projeto
-Aqui estão as imagens que detalham as etapas do projeto, demonstrando o fluxo de trabalho completo.
+#### Aqui estão as imagens que detalham as etapas do projeto, demonstrando o fluxo de trabalho completo.
 ---
 ### **1. Conectando a Tabela de Fatos (FactInventory)**
   <img align="right" width="400"  src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/1%20-%20Conex%C3%A3ofact.png">
 
 * Nesta etapa, a conexão com o **banco de dados SQL Server** é estabelecida para carregar a tabela `FactInventory`.
-* Essa tabela de fatos central contém informações críticas sobre o inventário, como quantidade em estoque e em pedido.
+* Essa tabela de fatos central contém informações críticas sobre o inventário,
+   como quantidade em estoque e em pedido.
 
 <br><br>
 
----
 #### **2. Conectando a Tabela de Dimensão (DimProduct)**
    <img align="right" width="400"  src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/2%20-%20tabela%20de%20dimens%C3%A3o%20DimProduct.png">
 
-* A imagem mostra o carregamento da tabela de dimensão `DimProduct`, que traz detalhes sobre os produtos (marca, cor, etc.).
+* A imagem mostra o carregamento da tabela de dimensão `DimProduct`,
+  que traz detalhes sobre os produtos (marca, cor, etc.).
 * A consulta SQL permite extrair dados essenciais para contextualizar a análise de inventário.
 
 <br><br>
-
 
 ### **3. Conectando a Tabela de Dimensão (DimStore)**
  <img align="right" width="400"  src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/3%20-%20tabela%20de%20dimens%C3%A3o%20DimStore.png">
  
 * Aqui, a tabela de dimensão `DimStore` é carregada, contendo informações sobre as lojas.
-* Isso é fundamental para segmentar a análise de dados por local, demonstrando a importância da **modelagem de dados** para a BI.
+* Isso é fundamental para segmentar a análise de dados por local,
+  demonstrando a importância da **modelagem de dados** para a BI.
   
 <br><br>
-
 
 ### **4. Transformação de Dados (DimDate)**
 <img align="right" width="400"  src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/4%20-%20transforma%C3%A7%C3%A3o%20de%20dados%20date.png">
 
 * Esta captura de tela destaca a fase de **transformação de dados** no Power Query.
-* A coluna `Mês` é criada a partir da `DateKey`, um passo crucial para enriquecer o modelo e permitir análises de séries temporais.
+* A coluna `Mês` é criada a partir da `DateKey`, um passo crucial para enriquecer o modelo
+   e permitir análises de séries temporais.
 
   <br><br>
-
-
-
 ### **5. Modelo de Dados (Star Schema)** 
-<img align="right" width="350"  src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/5%20-%20modelo%20de%20dados%20completo.png?raw=true">
+<img align="right" width="350" heigh="250" src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/5%20-%20modelo%20de%20dados%20completo.png?raw=true">
 
+* **Descrição:** A imagem mais importante! Ela exibe o **modelo de dados completo**, organizado em um **Esquema em Estrela (Star Schema)**.
+    * **Estrutura do Modelo:** A tabela de fatos `FactInventory` está no centro, conectada às tabelas de dimensão,
+        o que demonstra uma sólida compreensão em **modelagem dimensional**.
+    * **Base para Relatórios:** Este modelo é a base para a criação de relatórios de BI eficientes,
+        escaláveis e de fácil compreensão.
 
-
-* A imagem mais importante! Ela exibe o **modelo de dados completo**, organizado em um **Esquema em Estrela (Star Schema)**.
-* A tabela de fatos `FactInventory` está conectada às tabelas de dimensão, o que demonstra uma sólida compreensão em
-* **modelagem dimensional** para criação de relatórios de BI eficientes.
 <br><br>
-
-
-
-
-### Visão Geral do Dashboard
-
 ---
 
-### Resumo da Região - Japan
+### **6.📍 Visão Geral do Dashboard**
+<img align="" width="400" src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/Vis%C3%A3o%20geral%201.png?raw=true">
 
----
+* **Descrição:** O dashboard final transforma dados brutos em insights de negócio. Ele apresenta uma análise completa do inventário e das vendas, com destaque para:
+    * **KPIs de Estoque:** `301` lojas com estoque crítico, `2517` itens cadastrados, e o valor total do estoque (`45,82 Mi`) e do custo (`$5,49 Bi`).
+    * **Análise por Classe:** Um gráfico de rosca exibe a quantidade de itens por classe (`Regular`, `Economy`, `Deluxe`), permitindo uma visão rápida da distribuição do estoque.
+    * **Evolução de Pedidos:** Um gráfico de linha mostra a evolução mensal de unidades em falta e a quantidade de pedidos de compra, identificando tendências e picos.
+    * **Resumo por País:** Uma tabela resume o estoque disponível e a quantidade em falta por país, facilitando a identificação de áreas que precisam de atenção.
+    * **Top Lojas:** Um gráfico de barras apresenta o ranking das 10 lojas com mais unidades em falta.
+<br>
 
-### Filtros Interativos
+### **7. Detalhe do Tooltip Personalizado**
+<br>
+<img align="" width="400" src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/Tooltip.png?raw=true">
 
----
+* **Descrição:** Esta imagem demonstra a funcionalidade de um tooltip personalizado, um recurso avançado do Power BI.
+    * **Análise Detalhada:** Ao passar o mouse sobre os gráficos, um pop-up exibe dados detalhados, como o resumo de custos por região e um gráfico das principais lojas com unidades em             falta.
+    * **Melhora a Usabilidade:** Este recurso permite análises mais profundas sem a necessidade de navegar para outra página, tornando o dashboard mais intuitivo.
 
-### Análise por Região
+### **8. Filtros Interativos**
+<br>
+<img aling="" width="400" src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/Filtros%20Interativos.png?raw=true">
 
----
+ * **Descrição:** Esta imagem ilustra a funcionalidade de filtros interativos no dashboard.
+   * **Personalização da Análise:** Os filtros localizados à esquerda permitem que o usuário personalize a análise de dados com base em critérios como Ano, Continente,
+                                     Fabricante e ClassName.
+   * **Tomada de Decisão:** A capacidade de filtrar os dados de forma dinâmica é crucial para a tomada de decisões, permitindo a exploração de informações específicas
+                              e a obtenção de insights mais aprofundados sobre o desempenho.
 
-### Análise Detalhada por Região
+### **9. Análise por Região**
+<br>
+<img aling="" width="400" src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/An%C3%A1lise%20por%20Regi%C3%A3o.png?raw=true">
 
+* **Descrição:** Esta página do dashboard oferece uma **análise detalhada por região**.
+    * **KPIs de Estoque:** O painel exibe KPIs importantes, como `Custo de Ruptura de Estoque` e o percentual de `Unid em Falta`.
+    * **Visualizações:** Gráficos de barras mostram o ranking de produtos e a média de unidades em falta por loja, ajudando a identificar áreas com problemas de estoque.
+    * **Foco Regional:** O dashboard demonstra a capacidade de segmentar dados para uma análise focada em regiões específicas, essencial para a gestão global.
 
+### **10. Funcionalidade de Drill-through**
+<br>
+<img align="" width="400" src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/Drill%20-%20An%C3%A1lise.png?raw=true">
+
+* **Descrição:** A imagem destaca o uso do recurso de **Drill-through** no Power BI.
+    * **Análise Profunda:** O menu de contexto é usado para navegar para uma página de análise detalhada, a partir de um ponto específico do gráfico.
+    * **Melhora a Exploração:** Essa funcionalidade permite que o usuário mergulhe em informações mais específicas sem sobrecarregar a tela principal do dashboard, 
+                                aprimorando a experiência de exploração dos dados.
+
+### **11. Análise Detalhada**
+<br>
+<img align="" width="400" src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/An%C3%A1lise%20detalhada.png?raw=true">
+
+* **Descrição:** Esta página do dashboard é um exemplo de **análise detalhada por região**.
+    * **Métricas de Inventário:** O painel apresenta métricas-chave como `Unidades em Falta`, `Média Cobertura de Estoque` e `Qtd Em Pedido de compra`.
+    * **Análise Temporal e de Custo:** Gráficos de linha e de barras mostram o custo de ruptura de estoque por mês e o custo por loja,
+                                      facilitando a identificação de tendências e as áreas que mais impactam o negócio.
+    * **Comparativo Anual:** O gráfico de barras `YTD Unidades em Falta` permite a comparação anual do desempenho, uma visualização fundamental para a gestão de estoque.
 ---
 
 ## 🚀 Tecnologias Utilizadas
