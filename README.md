@@ -37,15 +37,14 @@ A base de dados utilizada é o **ContosoRetailDW**, disponibilizada pela Microso
  
 * Aqui, a tabela de dimensão `DimStore` é carregada, contendo informações sobre as lojas.
 * Isso é fundamental para segmentar a análise de dados por local,
-  demonstrando a importância da **modelagem de dados** para a BI.
-  
+ A edição dos pontos de latitude e longitude foi um passo importante para permitir a inclusão de um mapa no dashboard, o que enriquece a análise geográfica.
 <br><br>
 
 ### **4. Transformação de Dados (DimDate)**
 <img align="right" width="400"  src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/4%20-%20transforma%C3%A7%C3%A3o%20de%20dados%20date.png">
 
 * Esta captura de tela destaca a fase de **transformação de dados** no Power Query.
-* A coluna `Mês` é criada a partir da `DateKey`, um passo crucial para enriquecer o modelo
+* Colunas referentes as datas exemplo: `Mês` é criada a partir da `DateKey`, um passo crucial para enriquecer o modelo
    e permitir análises de séries temporais.
 
   <br><br>
@@ -65,7 +64,7 @@ A base de dados utilizada é o **ContosoRetailDW**, disponibilizada pela Microso
 <img align="" width="400" src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/Vis%C3%A3o%20geral%201.png?raw=true">
 
 * **Descrição:** O dashboard final transforma dados brutos em insights de negócio. Ele apresenta uma análise completa do inventário e das vendas, com destaque para:
-    * **KPIs de Estoque:** `301` lojas com estoque crítico, `2517` itens cadastrados, e o valor total do estoque (`45,82 Mi`) e do custo (`$5,49 Bi`).
+    * **KPIs de Estoque:**  lojas com estoque crítico,  itens cadastrados, e o valor total do estoque  e do custo .
     * **Análise por Classe:** Um gráfico de rosca exibe a quantidade de itens por classe (`Regular`, `Economy`, `Deluxe`), permitindo uma visão rápida da distribuição do estoque.
     * **Evolução de Pedidos:** Um gráfico de linha mostra a evolução mensal de unidades em falta e a quantidade de pedidos de compra, identificando tendências e picos.
     * **Resumo por País:** Uma tabela resume o estoque disponível e a quantidade em falta por país, facilitando a identificação de áreas que precisam de atenção.
@@ -120,15 +119,11 @@ A base de dados utilizada é o **ContosoRetailDW**, disponibilizada pela Microso
 ---
 
 ## 🚀 Tecnologias Utilizadas
-- Power BI  
-- SQL (para tratamento e consultas no banco de dados ContosoRetailDW)  
-- Power Query (ETL)  
-- DAX (cálculo de medidas e indicadores)  
-
+<div style="display: inline_block">
+    <img align="center" alt="SQL" height="40" width="40" src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/logo.png?raw=true">
+    <img align="center" alt="Power BI" height="40" width="40" src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/1200px-New_Power_BI_Logo.svg.png?raw=true">
 ---
 
 ## 📌 Observações
-Este projeto faz parte do meu portfólio em **Análise de Dados aplicada à Engenharia de Manutenção e Logística**, com foco em **gestão eficiente de estoques**.
+Este projeto faz parte do meu portfólio em **Análise de Dados**, com foco em **gestão eficiente de estoques**.
 
----
-👨‍💻 Desenvolvido por [Carlos Alberto Rodrigues de Mendonça](https://github.com/)  
