@@ -107,7 +107,7 @@ A base de dados utilizada é o **ContosoRetailDW**, disponibilizada pela Microso
     * **Melhora a Exploração:** Essa funcionalidade permite que o usuário mergulhe em informações mais específicas sem sobrecarregar a tela principal do dashboard, 
                                 aprimorando a experiência de exploração dos dados.
 
-### **11. Análise Detalhada**
+### **11. Análise Detalhada por Região**
 <br>
 <img align="" width="400" src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/An%C3%A1lise%20detalhada.png?raw=true">
 
