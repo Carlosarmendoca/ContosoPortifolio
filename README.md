@@ -124,6 +124,8 @@ A base de dados utilizada é o **ContosoRetailDW**, disponibilizada pela Microso
     <img align="center" alt="Power BI" height="40" width="40" src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/1200px-New_Power_BI_Logo.svg.png?raw=true">
 ---
 
+[Veja meu Dashboard no Power BI](https://app.powerbi.com/view?r=eyJrIjoiNmU4ZjY5MDctNzJkNS00OTljLTgwYmEtNWQ3NTBjMTgyYWZlIiwidCI6ImI1MjVhODJiLTQzMjgtNDUzNC04NmRmLTgyYTk0NmQwODU0ZSJ9)
+
 ## 📌 Observações
 Este projeto faz parte do meu portfólio em **Análise de Dados**, com foco em **gestão eficiente de estoques**.
 
