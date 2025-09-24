@@ -117,11 +117,16 @@ A base de dados utilizada é o **ContosoRetailDW**, disponibilizada pela Microso
 <br>
 <img align="" width="400" src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/An%C3%A1lise%20detalhada.png?raw=true">
 
-* **Descrição:** Esta página do dashboard é um exemplo de **análise detalhada por região**.
-    * **Métricas de Inventário:** O painel apresenta métricas-chave como `Unidades em Falta`, `Média Cobertura de Estoque` e `Qtd Em Pedido de compra`.
-    * **Análise Temporal e de Custo:** Gráficos de linha e de barras mostram o custo de ruptura de estoque por mês e o custo por loja,
-                                      facilitando a identificação de tendências e as áreas que mais impactam o negócio.
-    * **Comparativo Anual:** O gráfico de barras `YTD Unidades em Falta` permite a comparação anual do desempenho, uma visualização fundamental para a gestão de estoque.
+* **Descrição:** Este painel apresenta uma análise regional da gestão de estoque, com foco em desempenho por país e impacto financeiro.
+   **Principais métricas:**
+  * Total de unidades em falta e pedidos de reposição  
+  * Cobertura média de reposição por país  
+  * Evolução mensal do custo de ruptura de estoque  
+  * Comparativo anual de unidades em falta (YTD vs LY)  
+  * Custo de ruptura por região e loja
+  
+📈 Ideal para identificar áreas com maior impacto logístico e orientar decisões estratégicas baseadas em dados reais.
+    
 ---
 
 ## 🚀 Tecnologias Utilizadas
