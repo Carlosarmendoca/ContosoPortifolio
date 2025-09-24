@@ -76,7 +76,7 @@ A base de dados utilizada é o **ContosoRetailDW**, disponibilizada pela Microso
 <img align="" width="400" src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/Tooltip.png?raw=true">
 
 * **Descrição:** Esta imagem demonstra a funcionalidade de um tooltip personalizado, um recurso avançado do Power BI.
-    * **Análise Detalhada:** Ao passar o mouse sobre os gráficos, um pop-up exibe dados detalhados, como o resumo de custos por região e um gráfico das principais lojas com unidades em             falta.
+    * **Análise Detalhada:** Ao passar o mouse sobre a tabela, um pop-up exibe dados detalhados, como o resumo de custos por região e um gráfico das principais lojas com unidades em falta.
     * **Melhora a Usabilidade:** Este recurso permite análises mais profundas sem a necessidade de navegar para outra página, tornando o dashboard mais intuitivo.
 
 ### **8. Filtros Interativos**
