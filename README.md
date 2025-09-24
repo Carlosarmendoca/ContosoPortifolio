@@ -1,15 +1,21 @@
-## 📊 Dashboard de Estoque - Contoso
+# 📦 Dashboard de Estoque – Contoso
 
-Este projeto apresenta uma análise de estoque utilizando **Power BI**, com foco em identificar **estoques críticos**, **ruptura de produtos** e **impactos financeiros por região, país e loja**.  
+Este projeto apresenta uma análise de estoque utilizando Power BI, com foco em identificar **estoques críticos**, **ruptura de produtos** e **impactos financeiros** por região, país e loja.
 
-A base de dados utilizada é o **ContosoRetailDW**, disponibilizada pela Microsoft, sendo um excelente case para simulação de cenários de **gestão de estoque e logística**.
+A base de dados utilizada é o **ContosoRetailDW**, disponibilizada pela Microsoft — um excelente case para simulação de cenários de gestão de estoque e logística.
 
-### 🛠️ Tecnologias e Ferramentas
-
-* **Power BI:** Utilizado para ETL, modelagem e visualização de dados.
-* **SQL Server:** Fonte de dados original para as tabelas de fatos e dimensões.
-* **Power Query (M):** Usado para a etapa de transformação e enriquecimento dos dados.
 ---
+
+## 🛠️ Tecnologias e Ferramentas
+
+- **Power BI**: Utilizado para ETL, modelagem e visualização de dados.
+- **SQL Server**: Fonte de dados original para todos os dashboards.
+- **Power Query (M)**: Usado na etapa de transformação e enriquecimento dos dados.
+
+🔗 [Veja meu Dashboard no Power BI](https://app.powerbi.com/view?r=eyJrIjoiNmU4ZjY5MDctNzJkNS00OTljLTgwYmEtNWQ3NTBjMTgyYWZlIiwidCI6ImI1MjVhODJiLTQzMjgtNDUzNC04NmRmLTgyYTk0NmQwODU0ZSJ9)
+
+📌 *Este projeto faz parte do meu portfólio em Análise de Dados, com foco na gestão eficiente de estoques.*
+
 ### ⚙️ Principais Recursos do Dashboard
 ### 🖼️ Imagens do Projeto
 #### Aqui estão as imagens que detalham as etapas do projeto, demonstrando o fluxo de trabalho completo.
@@ -122,10 +128,8 @@ A base de dados utilizada é o **ContosoRetailDW**, disponibilizada pela Microso
 <div style="display: inline_block">
     <img align="center" alt="SQL" height="40" width="40" src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/logo.png?raw=true">
     <img align="center" alt="Power BI" height="40" width="40" src="https://github.com/Carlosarmendoca/ContosoPortifolio/blob/main/Imagens/1200px-New_Power_BI_Logo.svg.png?raw=true">
----
+
 
 [Veja meu Dashboard no Power BI](https://app.powerbi.com/view?r=eyJrIjoiNmU4ZjY5MDctNzJkNS00OTljLTgwYmEtNWQ3NTBjMTgyYWZlIiwidCI6ImI1MjVhODJiLTQzMjgtNDUzNC04NmRmLTgyYTk0NmQwODU0ZSJ9)
 
-## 📌 Observações
-Este projeto faz parte do meu portfólio em **Análise de Dados**, com foco em **gestão eficiente de estoques**.
 
